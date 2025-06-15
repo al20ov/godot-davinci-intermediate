@@ -8,7 +8,7 @@ Based on https://documents.blackmagicdesign.com/InformationNotes/DaVinci_Resolve
 
 2. If necessary, change the path of the .glsl shader in `_initialize_compute()` so it points to the location of `linear_to_di.glsl` in your project
 
-3. In your WorldEnvironment, make sure Tonemap is set to Linear and that exposure is set to 1.0
+3. In your WorldEnvironment, make sure Tonemap is set to **Linear** and that exposure is set to 1.0 to ensure no other tonemappers are enabled
 
 4. In your WorldEnvironment again, create a Compositor, then a CompositorEffect. You should now see a new option called "PostProcessLinearToDI"; Click on it
 
