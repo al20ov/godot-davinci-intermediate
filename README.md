@@ -38,9 +38,19 @@ Then head to the Fusion tab:
 2. Add a LUTCubeCreator node, set it to horizontal and whatever size you want (most people recommend 33, 51 or 65)
 3. Then, add a FileLUT node with the .cube you exported earlier
 4. Add a Transform node (under Tools > Transform > Transform) and set it to flip vertically
-5. Connect all the nodes, you should now see your LUT applied and the LUT strip flipped
+5. Connect all the nodes, you should now see your LUT applied to the strip
 6. Right click on the LUT displayed in the viewport, and save it as a TGA or PNG file
 
 ![image](https://github.com/user-attachments/assets/60ae8acf-6b22-4524-8d75-dd1200829bbb)
 
+Now, back in Godot, add the TGA or PNG LUT strip you exported and set it to a Texture3D with the following settings in the import tab:
 
+![image](https://github.com/user-attachments/assets/d0277437-6a7f-4e0a-b0a9-f3496f929a98)
+
+The horizontal slices should match the size of your LUT (in my case, 51)
+
+Then, click "Reimport" and drag your TGA or PNG lut into the Color Correction slot in WorldEnvironment > Adjustments
+
+And you should be able to see your LUT applied to your viewport:
+
+![image](https://github.com/user-attachments/assets/5290c305-9d2d-4681-a168-d7ba3831454d)
