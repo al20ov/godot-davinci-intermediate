@@ -13,6 +13,7 @@ layout(push_constant, std430) uniform Params {
 	vec2 pad;
 } params;
 
+// From https://documents.blackmagicdesign.com/InformationNotes/DaVinci_Resolve_17_Wide_Gamut_Intermediate.pdf
 float linear_to_davinci_intermediate(float val) {
 	if (val <= 0.00262409) {
 		return val * 10.44426855;
