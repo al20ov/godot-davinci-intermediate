@@ -1,3 +1,7 @@
+# A linear gamma to DaVinci Intermediate OETF shader
+
+Based on https://documents.blackmagicdesign.com/InformationNotes/DaVinci_Resolve_17_Wide_Gamut_Intermediate.pdf
+
 ## Usage
 
 1. Clone this repo, or just copy the .glsl shader as well as the .gd file into your project
